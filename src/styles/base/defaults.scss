@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+}
+
+.centered {
+    max-width: 1280px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+[class*="material-icons"] {
+    flex: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-brand);
+
+    &:hover {
+        text-decoration: underline;
+        color: var(--color-brand);
+    }
+}
+
+.v-cloak {
+    display: none;
+}
