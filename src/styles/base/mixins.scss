@@ -1,0 +1,27 @@
+@mixin screen($breakpoint) {
+    $width-value: 480px;
+
+    @if $breakpoint == mobile {
+        $width-value: 480px;
+    }
+
+    @if $breakpoint == table {
+        $width-value: 768px;
+    }
+
+    @if $breakpoint == desktop {
+        $width-value: 1024px;
+    }
+
+    @if $breakpoint == large {
+        $width-value: 1440px;
+    }
+    
+    @if $breakpoint == extra-large {
+        $width-value: 1860px;
+    }
+
+    @media only screen and (min-width: $width-value) {
+        @content;
+    }
+}

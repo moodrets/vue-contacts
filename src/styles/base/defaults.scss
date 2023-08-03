@@ -5,6 +5,7 @@
 body {
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 16px;
+    min-width: 320px;
 }
 
 .centered {
@@ -22,6 +23,7 @@ body {
 a {
     text-decoration: none;
     color: var(--color-brand);
+    outline: none;
 
     &:hover {
         text-decoration: underline;
@@ -31,4 +33,18 @@ a {
 
 .v-cloak {
     display: none;
+}
+
+.page-layout {
+    display: flex;
+    gap: var(--spacing-2xl);
+
+    &__aside {
+        width: var(--app-aside-width);
+    }
+
+    &__content {
+        flex: 1;
+        min-width: 0;
+    }
 }

@@ -9,13 +9,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@types/node": "^20.4.6",
     "material-icons": "^1.13.9",
     "normalize.css": "^8.0.1",
     "vue": "^3.3.4",
     "vue-router": "^4.2.4"
   },
   "devDependencies": {
+    "@types/node": "^20.4.6",
     "@vitejs/plugin-vue": "^4.2.3",
     "sass": "^1.64.2",
     "typescript": "^5.0.2",

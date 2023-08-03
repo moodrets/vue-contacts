@@ -6,8 +6,10 @@ const routes: RouteRecordRaw[] = [
 	{ 
         path: '/', component: DefaultLayout, 
         children: [
-            { name: 'main', path: '', component: () => import('@/pages/MainPage.vue') }
-        ] 
+            { name: 'main', path: '', component: () => import('@/views/MainPage.vue')},
+            { name: 'contacts-list', path: '/contacts/list', component: () => import('@/views/ContactsList.vue') },
+            { name: 'contacts-create', path: '/contacts/create', component: () => import('@/views/ContactsCreate.vue') }
+        ]
     },
 ]
 

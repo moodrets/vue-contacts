@@ -1,8 +1,8 @@
 <template>
     <AppHeader></AppHeader>
-    <main class="centered">
+    <section class="centered">
         <router-view></router-view>
-    </main>
+    </section>
 </template>
 
 <script lang="ts" setup>

@@ -1,5 +1,11 @@
 :root {
-    --color-brand: rgb(59 130 246);
+    --app-aside-width: 280px;
+    
+    --color-brand: rgb(99 102 241);
+    --color-brand-100: rgb(79 70 229);
+    --color-brand-200: rgb(67 56 202);
+    --color-stone: rgb(214 211 209);
+    --color-slate: rgb(241 245 249);
     --color-light: #ffffff;
     --color-dark: #ffffff;
 
@@ -11,8 +17,16 @@
     --spacing-2xl: 24px;
     --spacing-3xl: 32px;
 
-    --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);;
-    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);;
+    --radius-xs: 4px;
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-xl: 20px;
+    --radius-2xl: 24px;
+    --radius-3xl: 32px;
+
+    --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
 }

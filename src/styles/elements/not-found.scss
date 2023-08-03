@@ -1,0 +1,21 @@
+.not-found-text {
+    font-weight: 600;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    [class*="material-icons"] {
+        font-size: 34px;
+        color: var(--color-brand);
+        flex: none;
+
+        &:first-child {
+            margin-right: var(--spacing-md);
+        }
+
+        &:last-child {
+            margin-left: var(--spacing-md);
+        }
+    }
+}

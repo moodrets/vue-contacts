@@ -9,7 +9,7 @@
 
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .text-block {
     text-align: center;
 }

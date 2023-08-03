@@ -1,0 +1,56 @@
+.app-button {
+    border: none;
+    outline: none;
+    margin: 0;
+    text-decoration: none;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border-radius: var(--radius-sm);
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+
+    [class*="material-icons"]:first-child {
+        margin-right: var(--spacing-sm);
+    }
+
+    [class*="material-icons"]:last-child {
+        margin-left: var(--spacing-sm);
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &--primary {
+        background: var(--color-brand);
+        color: var(--color-light);
+
+        &:hover,
+        &:focus-visible {
+            color: var(--color-light);
+            background: var(--color-brand-100);
+        }
+    }
+
+    &--light {
+        background: var(--color-light);
+        color: var(--color-brand);
+        box-shadow: 0 0 0 2px var(--color-brand);
+
+        &:hover,
+        &:focus-visible {
+            box-shadow: 0 0 0 2px var(--color-brand-200);
+            color: var(--color-brand-200);
+            background: var(--color-slate);
+        }
+    }
+
+    &[disabled],
+    &:disabled {
+        pointer-events: none;
+        opacity: .5;
+    }
+}
