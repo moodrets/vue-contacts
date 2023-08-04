@@ -102,7 +102,7 @@ const onSubmit = () => {
             ...contactModel.value
         })
         AppStorage.setItem('contacts_list', contactList.value)
-        goBack()
+        router.push({name: 'contacts.list'})
     }
 }
 </script>
