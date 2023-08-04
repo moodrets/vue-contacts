@@ -7,14 +7,17 @@ const __filename = url.fileURLToPath(import.meta.url)
 const __dirname = url.fileURLToPath(new URL('.', import.meta.url))
 
 // https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [vue()],
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, 'src')
+export default defineConfig(({mode}) => {
+  return {
+    base: mode === 'devepment' ? '/' : '/vue-contacts',
+    plugins: [vue()],
+    resolve: {
+      alias: {
+        "@": path.resolve(__dirname, 'src')
+      },
     },
-  },
-  server: {
-    port: 7171
+    server: {
+      port: 7171
+    }
   }
 })

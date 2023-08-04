@@ -1,14 +1,17 @@
 {
   "name": "vue-contacts",
-  "private": true,
+  "private": false,
+  "homepage": "https://github.com/moodrets/vue-contacts",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "material-icons": "^1.13.9",
     "normalize.css": "^8.0.1",
     "vue": "^3.3.4",
