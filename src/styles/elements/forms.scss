@@ -26,4 +26,11 @@
         font-size: 14px;
         margin-bottom: var(--spacing-sm);
     }
+
+    &__content--flex {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: var(--spacing-md);
+    }
 }

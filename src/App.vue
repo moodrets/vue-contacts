@@ -7,8 +7,8 @@
 <script lang="ts" setup>
 import { ref, onBeforeMount } from 'vue'
 import { AppStorage } from '@/helpers/common'
-import { defaultContactsList } from '@/helpers/initialData';
-import { IContactItem } from '@/types/Contacts';
+import { defaultContactsList } from '@/helpers/initialData'
+import { IContactItem } from '@/types/Contacts'
 
 const appLoaded = ref<boolean>(false)
 

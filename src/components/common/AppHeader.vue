@@ -23,12 +23,12 @@ const menuItems = reactive<ITopMenuItem[]>([
     {
         label: 'Contact list',
         icon: 'list_alt',
-        routerName: 'contacts-list'
+        routerName: 'contacts.list'
     },
     {
         label: 'Create contact',
         icon: 'person_add',
-        routerName: 'contacts-create'
+        routerName: 'contacts.create'
     }
 ])
 </script>
