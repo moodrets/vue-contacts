@@ -2,9 +2,11 @@ import { createWebHistory, createRouter, RouteRecordRaw } from 'vue-router'
 
 import DefaultLayout from '@/layouts/Default.vue'
 
+const routerBase = import.meta.env.MODE === 'development' ? '/' : '/vue-contacts/'
+
 const routes: RouteRecordRaw[] = [
 	{ 
-        path: '/', component: DefaultLayout,
+        path: routerBase, component: DefaultLayout,
         children: [
             { name: 'main', path: '', component: () => import('@/views/MainPage.vue')},
             { name: 'contacts.list', path: '/contacts/list', component: () => import('@/views/ContactsList.vue') },
