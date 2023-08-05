@@ -30,7 +30,7 @@
                         <span>{{ formMode === 'edit' ? 'Save contact' : 'Create contact' }}</span>
                     </button>
                     <div class="contact-form__actions">
-                        <div class="icon-delete material-icons-round" @click="onRemoveItem(contactModel, toast, goToList)">delete_outline</div>
+                        <div v-if="formMode === 'edit'" class="icon-delete material-icons-round" @click="onRemoveItem(contactModel, toast, goToList)">delete_outline</div>
                         <div class="icon-back material-icons-round" @click="goBack">arrow_back</div>
                     </div>
                 </div>
