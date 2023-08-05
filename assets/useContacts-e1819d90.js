@@ -1,0 +1,1 @@
+import{A as i,j as r}from"./index-54a242c2.js";const n=i.getItem("contacts_list"),t=r(n||[]),a=(e,s,o)=>{window.confirm(`Are you sure to delete "${e.fullName}"?`)&&e.id&&(s==null||s.show("success","Сontact deleted"),t.value=t.value.filter(c=>c.id!==e.id),i.setItem("contacts_list",t.value),o&&o())};export{t as c,a as o};
