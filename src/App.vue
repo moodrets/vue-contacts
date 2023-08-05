@@ -12,7 +12,7 @@ import { IContactItem } from '@/types/Contacts'
 
 const appLoaded = ref<boolean>(false)
 
-document.fonts.onloading = () => {
+document.fonts.onloadingdone = () => {
     appLoaded.value = true
 }
 
