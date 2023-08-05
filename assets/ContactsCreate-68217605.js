@@ -1,1 +1,0 @@
-import{_ as e}from"./Form.vue_vue_type_style_index_0_lang-8bdde8ae.js";import{d as o,o as t,q as a}from"./index-54a242c2.js";import"./useContacts-e1819d90.js";const p=o({__name:"ContactsCreate",setup(r){return(n,s)=>(t(),a(e))}});export{p as default};
