@@ -6,31 +6,32 @@ const routerBase = import.meta.env.MODE === 'development' ? '/' : '/vue-contacts
 
 const routes: RouteRecordRaw[] = [
 	{ 
-        path: routerBase, component: DefaultLayout,
+        path: routerBase, 
+        component: DefaultLayout,
         children: [
             { 
-                name: 'main', 
                 path: '', 
+                name: 'main', 
                 component: () => import('@/views/MainPage.vue')
             },
             { 
-                name: 'contacts.list', 
-                path: '/contacts/list', 
+                path: 'contacts/list',
+                name: 'contacts.list',
                 component: () => import('@/views/ContactsList.vue') 
             },
             { 
-                name: 'contacts.create', 
-                path: '/contacts/create', 
+                path: 'contacts/create',
+                name: 'contacts.create',
                 component: () => import('@/views/ContactsCreate.vue') 
             },
             { 
-                name: 'contacts.view', 
-                path: '/contacts/:id', 
+                path: 'contacts/:id',
+                name: 'contacts.view',
                 component: () => import('@/views/ContactsView.vue') 
             },
             { 
-                name: 'contacts.edit', 
-                path: '/contacts/edit/:id', 
+                path: 'contacts/edit/:id',
+                name: 'contacts.edit',
                 component: () => import('@/views/ContactsEdit.vue') 
             }
         ]
